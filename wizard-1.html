@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Bootstrap wizard tutorial </title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="css/bstreeview.min.css">
+
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/vision.js"></script>
+        <script src="js/bstreeview.min.js"></script>
+
+        <style>
+            body {
+                padding-right:  4%;
+    '            padding-left:  4%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="tree">
+                                        
+            </div>
+
+        </div>
+
+    </body>
+    <script>
+
+var myData = '['+
+    '{'+
+    'text: "Node 1",'+
+    'icon: "fa fa-folder",'+
+    'nodes: ['+
+    '{'+
+    'text: "Node 1-1",'+
+    'icon: "fa fa-folder",'+
+    'nodes: ['+
+    '{'+
+    'text: "Node 1-1-1",'+
+    'icon: "fa fa-folder",'+
+    'class: "custom-class",'+
+    'href: "#"'+
+    '},'+
+    '{'+
+    'text: "Node 1-1-2",'+
+    'icon: "fa fa-folder"'+
+    '}'+
+    ']'+
+    '},'+
+    '{'+
+    'text: "Node 1-2",'+
+    'icon: "fa fa-folder"'+
+    '}'+
+    ']'+
+    '},'+
+    '{'+
+    'text: "Node 3",'+
+    'icon: "fa fa-folder"'+
+    '}'+
+    '];';
+    console.log("five six");        
+
+    $('#tree').bstreeview({ 
+        data: JSON.stringify(myData)
+    });
+
+    </script>
+
+</html>

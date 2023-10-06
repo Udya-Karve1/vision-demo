@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/vision.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/fontawesome.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Vision J</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                        <ul class="navbar-nav mx-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Stats</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Stats
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Stats</a></li>  
+                                      <li><a class="dropdown-item" href="#">Outlier</a></li>  
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#deleteColumnModal">Delete column</a></li>
+                                      <li><a class="dropdown-item" href="#">Add column</a></li>
+                                    </ul>
+                                  </div>                                
+                            </li>
+                            <li class="nav-item mx-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Regression
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Linear regression</a></li>
+                                      <li><a class="dropdown-item" href="#">Ridge regression</a></li>
+                                      <li><a class="dropdown-item" href="#">Lasso regression</a></li>
+                                      <li><a class="dropdown-item" href="#">Decission Tree</a></li>
+                                      <li><a class="dropdown-item" href="#">Random Forest</a></li>
+                                    </ul>
+                                  </div>                                
+                            </li>
+                            <li class="nav-item mx-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Classification
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Logistic Regression</a></li>
+                                      <li><a class="dropdown-item" href="#">Naive Bayes</a></li>
+                                      <li><a class="dropdown-item" href="#">K-Nearest Neighbour</a></li>
+                                      <li><a class="dropdown-item" href="#">Decission Tree</a></li>
+                                      <li><a class="dropdown-item" href="#">Support Vector Machine</a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Association
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">Apriori</a></li>
+                                      <li><a class="dropdown-item" href="#">ECLAT</a></li>
+                                      <li><a class="dropdown-item" href="#">F-P Growth</a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Clustering
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="#">K-Means</a></li>
+                                      <li><a class="dropdown-item" href="#">Mean-Shift</a></li>
+                                      <li><a class="dropdown-item" href="#">DBSCAN</a></li>
+                                      <li><a class="dropdown-item" href="#">Expectation-Maximization</a></li>
+                                      <li><a class="dropdown-item" href="#">Agglomerative Hierarchical</a></li>
+                                      <li><a class="dropdown-item" href="#">Divisive Hierarchical</a></li>
+                                    </ul>
+                                  </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        
+
+
+        <div class="container" >
+
+            <div style="margin-top:80px">
+                <div class="height-100 bg-light">
+                    <div class="container px-4 py-4">
+
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#static" type="button" role="tab" aria-controls="static">Learning</button>
+                                <button class="nav-link" id="nav-home-tab2" data-bs-toggle="tab" data-bs-target="#camcap" type="button" role="tab" aria-controls="camcap">Visulation</button>
+                            </div>
+                        </nav>
+
+                        
+                        <div class="tab-content" id="nav-tabcontent">
+                            <div class="tab-pane fade show active" id="static" role="tabpanel" aria-labelledby="">
+                                <div class="row py-2">
+                                
+                                    <div class="col-6 mb-4 form">
+                                        <input class="form-control form-control-sm mb-3" id="formFileSm" name="formFileSm" type="file" accept="video/*,audio/*,image/*">
+                                    </div>
+                                    <div class="col-6 mb-4 " >
+                                        <button  class="btn btn-primary btn-sm form-control form-control-sm" id="btnUploadImage" type="button">Upload & Parse</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show " id="camcap" role="tabpanel" aria-labelledby="">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <img />
+
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="mb-4 form">
+                                            <label for="sel-language" class="form-label">Language</label>
+                                            <select id="sel-language" name="language" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                                                <option selected>--Language--</option>
+                                                <option value="eng">English</option>
+                                                <option value="por">Portugis</option>
+                                                <option value="hin">Hindi</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-4 " >
+                                            <button  class="btn btn-primary btn-sm form-control form-control-sm" id="btnUploadImage" type="button">Catpure Image</button>
+                                        </div>
+                                        <div class="mb-4 " >
+                                            <button  class="btn btn-primary btn-sm form-control form-control-sm" id="btnUploadImage" type="button">Start Cam</button>
+                                        </div>
+                                        <div class="mb-4" >
+                                            <div class="row ">
+                                                <div class="col-12 button-wrapper">
+                                                    <button type="button" class="btn btn-secondary btn-sm form-control form-control-sm">
+                                                        <i class='far fa-images'></i>&nbsp; Image to Text
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary btn-sm form-control mr-1">
+                                                        <i class='far fa-grin'></i>&NonBreakingSpace;Face Detection
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary btn-sm form-control">
+                                                        <i class="fa fa-hand-paper-o"></i>&NonBreakingSpace;Hand Detection
+                                                    </button>
+                                                    <button type="button" class="btn btn-secondary btn-sm form-control">
+                                                        <i class='fas fa-draw-polygon'></i>Object Detection
+                                                    </button>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input chkbutton" type="checkbox" id="chkItoT" name="chkaction" value="yes">
+                                                        <label class="form-check-label" for="chkItoT">Image to Text</label>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input chkbutton" type="checkbox" id="chkface" name="chkaction" value="yes">
+                                                        <label class="form-check-label" for="chkface">Face detection</label>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input chkbutton" type="checkbox" id="chkhand" name="chkaction" value="yes">
+                                                        <label class="form-check-label" for="chkhand">Hand Detection</label>
+                                                    </div>
+                                                    <div class="form-check form-switch">
+                                                        <input class="form-check-input chkbutton" type="checkbox" id="chkobject" name="chkaction" value="yes">
+                                                        <label class="form-check-label" for="chkobject">Object Detection</label>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 " >
+                                        </div>
+                                        <div class="mb-4 " >
+                                        </div>
+                                        <div class="mb-4 " >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="deleteColumnModal" tabindex="-1" aria-labelledby="deleteColumnModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table>
+                    <tr>
+                        <td>Column</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Column 1</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Column 2</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Column 3</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Column 4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Column 5</td>
+                        <td></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </body>
+</html>
+
+<script>
+includeHTML();
+
+$(".chkbutton").change(function(object){
+    $(".chkbutton").prop("checked", false);
+    $(this).prop("checked", true);
+})
+</script>
